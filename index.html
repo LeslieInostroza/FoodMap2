@@ -4,9 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>FOODMAP</title>
+  <!-- link bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/style.css">
+  <!-- Link Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- links y js Here Map -->
+  <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css"/>
+  <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="https://js.api.here.com/v3/3.0/mapsjs-places.js"></script>
+
+    <!-- link css propio -->
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-  
+  <header id ="headerTitle">
+    <h1>F O O D M A P</h1>
+  </header>
+  <section id="inputModal">
+    <div class="row">
+      <div class="col-md-6 offset-md-3"> 
+        <h2>Comida cerca de ti</h2>
+        <div class="contSelBtn">
+            <select class="custom-select" name ="select" id="inputGroupSelect">
+              <option selected>Ubicacion de Comida...</option>
+              <option value="Pizzas">Pizzas</option>
+              <option value="Sushi">Sushi</option>
+              <option value="Parrilladas">Parrilladas</option>
+              <option value="Sandwich">Sandwich</option>
+            </select>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="btnSearchModal">
+              <i class="fas fa-search"></i>
+            </button> 
+          </div> 
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Restaurante seleccionado</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="containerRenderMap">
+    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+  <section id="sectionMap">
+    <div class="row">
+      <div id="mapContainer" class="map"></div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div id="image">
+      <span>
+        <img id="img"src="assets/img/comida.jpg" alt="">
+      </span>
+    </div>
+  </footer>
+  <!-- js boostrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- script propios -->
+  <script src="src/JS/modelo/modelo.js"></script>
+  <script src="src/JS/views/views.js"></script>
 </body>
 </html>
