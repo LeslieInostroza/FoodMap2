@@ -28,7 +28,9 @@
   <section id="inputModal">
     <div class="row">
       <div class="col-md-6 offset-md-3"> 
-        <h2>Comida cerca de ti</h2>
+       <div id="pH3">
+         <h3>Comida Cerca de ti</h3>
+       </div> 
         <div class="contSelBtn">
           <select class="custom-select" name ="select" id="inputGroupSelect">
             <option selected>Ubicacion de Comida...</option>
@@ -45,14 +47,14 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Restaurante seleccionado</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Comida a tu Alcance</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body" id="containerRenderMap"></div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
               </div>
             </div>
           </div>
@@ -62,15 +64,13 @@
   </section>
   <section id="sectionMap">
     <div class="row">
+        <div class="col-sm-6 offset-sm-3">
       <div id="mapContainer" class="map"></div>
+    </div>
     </div>
   </section>
   <footer id="footer">
-    <div id="image">
-      <span>
-        <img id="img"src="assets/img/comida.jpg" alt="">
-      </span>
-    </div>
+    <img id="imgFooter" src="assets/img/rling-footer.png" alt="">
   </footer>
   <!-- js boostrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
