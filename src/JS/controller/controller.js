@@ -1,6 +1,6 @@
 btnSearchModal.addEventListener('click', () => {
   cleanDescription();
-  const ubication = `https://places.cit.api.here.com/places/v1/discover/search?app_id=fLzneZsZJmJNOTDlBulj&app_code=dWYEJbbiTjECkQ-bI243qQ&at=${HEREHQcoordinates.lat},${HEREHQcoordinates.lng}&q=${inputGroupSelect.value}&pretty`
+  const ubication = `http://places.cit.api.here.com/places/v1/discover/search?app_id=fLzneZsZJmJNOTDlBulj&app_code=dWYEJbbiTjECkQ-bI243qQ&at=${HEREHQcoordinates.lat},${HEREHQcoordinates.lng}&q=${inputGroupSelect.value}&pretty`
   fetch(ubication)
   .then(response => response.json())
   .then(explorer => {
