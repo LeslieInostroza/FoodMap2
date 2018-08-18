@@ -7,4 +7,4 @@ setTimeout(() => {
   inputModal.style.display ="block";
   footer.style.display ="block";
   gifContainer.style.display="none";
-}, 2500);
+}, 2700);
