@@ -12,18 +12,18 @@ const renderInfo = (explorer) => {
   containerRenderMap.innerHTML += `
   <div class="divModel">
     <p class="pTitle">${JSON.stringify(explorer.results.items[0].title)}</p>
-    <p>Calificacion: ${JSON.stringify(explorer.results.items[0].averageRating)}</p>
-    <p>Direccion: ${JSON.stringify(explorer.results.items[0].vicinity)}</p>
+    <p class="pCalif">Calificacion: ${JSON.stringify(explorer.results.items[0].averageRating)}</p>
+    <p class="pDirec">Direccion: ${JSON.stringify(explorer.results.items[0].vicinity)}</p>
   </div>
   <div class="divModel">
     <p class="pTitle">${JSON.stringify(explorer.results.items[1].title)}</p>
-    <p>Calificacion: ${JSON.stringify(explorer.results.items[1].averageRating)}</p>
-    <p>Direccion: ${JSON.stringify(explorer.results.items[1].vicinity)}</p>
+    <p class="pCalif">Calificacion: ${JSON.stringify(explorer.results.items[1].averageRating)}</p>
+    <p class="pDirec">Direccion: ${JSON.stringify(explorer.results.items[1].vicinity)}</p>
   </div>
   <div class="divModel">
     <p class="pTitle">${JSON.stringify(explorer.results.items[2].title)}</p>
-    <p>Calificacion: ${JSON.stringify(explorer.results.items[2].averageRating)}</p>
-    <p>Direccion: ${JSON.stringify(explorer.results.items[2].vicinity)}</p>
+    <p class="pCalif">Calificacion: ${JSON.stringify(explorer.results.items[2].averageRating)}</p>
+    <p class="pDirec">Direccion: ${JSON.stringify(explorer.results.items[2].vicinity)}</p>
   </div>`;
 };
 const cleanDescription = () => {
