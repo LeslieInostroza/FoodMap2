@@ -10,6 +10,21 @@ h1{
   margin-left: 100px;
   margin-right: 100px;
 }
+#headerTitle{
+  z-index: 2;
+}
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+ #inputModal,#footer{
+  display :none;
+}
 /*EStilo InputModal*/
 
 h3{
