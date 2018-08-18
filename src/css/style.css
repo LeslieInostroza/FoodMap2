@@ -65,6 +65,15 @@ h3{
   position: relative;
   margin-top: -2%;
 }
+#gifContainer{
+  display: block;
+  position: relative;
+  margin-top: -30%;
+}
+#imgGif{
+  width: 100%;
+  margin-top: 10%;
+}
 /*Estilo footer*/
 #imgFooter{
   width: 100%;
@@ -80,6 +89,9 @@ h3{
   }
   .map{
     margin-top: 6px;
+  }
+  #imgGif{
+  
   }
   #inputGroupSelect{
     width: 264px;

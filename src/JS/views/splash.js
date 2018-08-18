@@ -6,4 +6,5 @@ setTimeout(() => {
   footer.style.animation = 'fadein 1s ease';
   inputModal.style.display ="block";
   footer.style.display ="block";
+  gifContainer.style.display="none";
 }, 2500);
