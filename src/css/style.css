@@ -80,7 +80,7 @@ h3{
   height: 20vh;
 }
 /*Responsive*/
-@media(min-width: 320px) and (max-width: 425px){
+@media(min-width: 320px) and (max-width: 768px){
   h1{
     margin-left: 0;
     margin-right: 0;
